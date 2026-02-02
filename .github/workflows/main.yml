@@ -1,0 +1,12 @@
+name: Scheduled Job
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+jobs:
+  scheduled-task:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run scheduled command
+        run: echo "This job is running on schedule"
